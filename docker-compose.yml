@@ -8,7 +8,7 @@ services:
       - "8080:8080" 
     restart: unless-stopped  
     environment: 
-       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-standalone:3306/empdoccom?useSSL=false
+       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-standalone:3306/empdoccom?allowPublicKeyRetrieval=true&useSSL=false
        SPRING_DATASOURCE_USERNAME: "root"
        SPRING_DATASOURCE_PASSWORD: "Admin"
     build:
